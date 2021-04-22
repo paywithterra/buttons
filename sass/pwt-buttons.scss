@@ -1,0 +1,162 @@
+@import "pwt-variables";
+
+
+@mixin pay-with-terra-basic {
+
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+
+  &:not(.pwt-system-font) {
+    font-family: $pwt-btn-font-family;
+  }
+
+
+  font-size: $pwt-btn-font-size;
+  line-height: 1;
+
+
+  &>span {
+    font-size: 1em;
+    line-height: 1;
+    margin-left: 0.3em;
+    padding-top: 0.1em;
+    color: $pwt-btn-label-fg;
+    white-space: nowrap;
+
+    &:first-child {
+      margin-right: 0.3em;
+    }
+
+    &.pwt-label-terra {
+      color: $pwt-btn-label-terra;
+    }
+
+    &.pwt-label-denom {
+      color: #0d6efd;
+      background-color: #0d6efd;
+      background-image: linear-gradient(to right, #0d6efd, #2043b5);
+      background-size: 100%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+    }
+
+    &.pwt-logo {
+      font-size: 1.2em;
+      display: inline-block;
+      width: 0.6em;
+      height: 0.6em;
+      padding: 0.1em;
+      margin-left: 0;
+      margin-right: 0;
+      border-radius: 15%;
+      background-color: $pwt-logo-color;
+      background-origin: content-box;
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTIiIGhlaWdodD0iOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTMzLjcwOCAxNS40NTljLTQuNTIxIDYuNjcxLTE5LjU4NiAxMS4zNjYtMjIuMDcxIDEwLjYyNXYtLjAyM2EzNS4wOTggMzUuMDk4IDAgMDExMS4wMzYtMTIuODk0IDMzLjIxNiAzMy4yMTYgMCAwMTIuODg3LTEuODY0YzIuMTA1LTEuMjEzIDQuMjUzLTEuMjggNC45Ny0xLjMwMyA2LjcxNS4xMTIgMy4yMjMgNS4zOTEgMy4xNzggNS40NTl6bS0zLjgwNSA0OS45NTljLjMzNiAyLjE3OSAwIDEwLjg1LS40NDggMTEuNTY5LS40MDMuMDIyLTEuMjA4LjA2Ny0zLjU1OS0xLjIzNkEzNy41OTUgMzcuNTk1IDAgMDE4LjkyOCA1NS4zMDlhMzYuNDY2IDM2LjQ2NiAwIDAxLjQwMy0yNC41M2MyLjY4NiAzLjU1IDUuODIgNi43NjEgOC40NjIgMTAuMzMzIDIuNTMgMy40MzcgNS45OTkgOC45ODUgNi43MTUgMTAuMTc2IDQuMzY1IDcuMzkgNS4wNiAxMS45MjggNS4zOTUgMTQuMTN6TTgzIDQzLjk4OGMwIDQuNzQtLjk0IDkuMjc3LTIuNjE5IDEzLjQzMy00LjQ3NyA0LjYwNS0zNC41MTgtNi43NjItMzQuODA5LTYuODk3LTQuMTE4LTEuNzMtMTYuNjMyLTcuMDMtMTcuNzUtMTUuMzItMS42MzUtMTEuOTUgMjMuNTAzLTIwLjI4NSAzNC41NC0yMC41OTkgMS4zNDIuMDIyIDUuMzcyLjA2NyA3LjcgMS45MWEzNS44MTIgMzUuODEyIDAgMDE5LjUxNSAxMi4yOTFBMzUuOTM0IDM1LjkzNCAwIDAxODMgNDMuOTg3ek02My41MjUgNzYuMzM0Yy0zLjEzNCAxLjUwNS02LjYwMy40MDQtNS43MDgtMi43ODUgMS43MjQtNi4xMSAxNi43ODktMTIuMzc4IDIwLjEwMi0xMi43MTUuNDI1LS4wNDUuNTgyLjIyNS40MDMuNTg0YTM3LjM2IDM3LjM2IDAgMDEtMTQuNzk3IDE0Ljg5NCIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==");
+    }
+  }
+
+  &.pwt-system-font {
+    font-family: $pwt-btn-font-system;
+
+    &>span:not(.pwt-logo) {
+
+      padding-top: 0;
+      padding-bottom: 0.1em;
+    }
+  }
+
+  &.pwt-short-spaces {
+    &>span:not(.pwt-label-terra) {
+      margin-left: 0.05em;
+    }
+
+    &>span.pwt-label-terra {
+      margin-left: 0;
+    }
+
+    &>span.pwt-logo {
+      margin-right: 0.3em;
+    }
+
+    &>span:not(.pwt-label-terra):last-child {
+      margin-left: 0.3em;
+    }
+  }
+}
+
+.btn-pay-with-terra {
+
+  @include pay-with-terra-basic;
+
+  background: $pwt-btn-bg;
+  border: 0;
+  border-radius: $pwt-btn-border-radius;
+
+  padding: $pwt-btn-padding;
+  vertical-align: baseline;
+  cursor: pointer;
+
+  &:focus:not(:focus-visible) {
+    outline: 0;
+  }
+
+  &:hover {
+    background: darken($color: $pwt-btn-bg, $amount: 5%);
+  }
+
+  &:active {
+    background: darken($color: $pwt-btn-bg, $amount: 10%);
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 $pwt-btn-focus-outline-size transparentize($pwt-btn-bg, 0.75);
+  }
+
+  &:disabled,
+  &.disabled,
+  fieldset:disabled & {
+    pointer-events: none;
+    opacity: $pwt-btn-disabled-opacity;
+  }
+
+
+  &.pwt-dark {
+    background-color: $pwt-btn-bg-dark;
+
+    &:hover {
+      background: lighten($color: $pwt-btn-bg-dark, $amount: 5%);
+    }
+
+    &:active {
+      background: lighten($color: $pwt-btn-bg-dark, $amount: 10%);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 $pwt-btn-focus-outline-size transparentize($pwt-btn-bg-dark, 0.75);
+    }
+
+    &>span {
+      &:first-child {
+        color: $pwt-btn-label-addon-color-dark;
+      }
+
+      &.pwt-label-terra {
+        color: $pwt-btn-label-terra-dark;
+      }
+
+      &.pwt-label-denom {
+        color: $pwt-btn-label-fg-dark;
+        background-color: $pwt-btn-label-fg-dark;
+        background-image: linear-gradient(to right, $pwt-btn-label-fg-dark, $pwt-btn-label-terra-dark);
+      }
+    }
+  }
+}

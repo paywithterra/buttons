@@ -1,0 +1,92 @@
+.btn-pay-with-terra {
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 1rem;
+  line-height: 1;
+  background: #ffffff;
+  border: 0;
+  border-radius: 0.25rem;
+  padding: 0.65em 2em;
+  vertical-align: baseline;
+  cursor: pointer; }
+  .btn-pay-with-terra:not(.pwt-system-font) {
+    font-family: "Questrial", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+  .btn-pay-with-terra > span {
+    font-size: 1em;
+    line-height: 1;
+    margin-left: 0.3em;
+    padding-top: 0.1em;
+    color: #2d2d2d;
+    white-space: nowrap; }
+    .btn-pay-with-terra > span:first-child {
+      margin-right: 0.3em; }
+    .btn-pay-with-terra > span.pwt-label-terra {
+      color: #2043b5; }
+    .btn-pay-with-terra > span.pwt-label-denom {
+      color: #0d6efd;
+      background-color: #0d6efd;
+      background-image: linear-gradient(to right, #0d6efd, #2043b5);
+      background-size: 100%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent; }
+    .btn-pay-with-terra > span.pwt-logo {
+      font-size: 1.2em;
+      display: inline-block;
+      width: 0.6em;
+      height: 0.6em;
+      padding: 0.1em;
+      margin-left: 0;
+      margin-right: 0;
+      border-radius: 15%;
+      background-color: #0d6efd;
+      background-origin: content-box;
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTIiIGhlaWdodD0iOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTMzLjcwOCAxNS40NTljLTQuNTIxIDYuNjcxLTE5LjU4NiAxMS4zNjYtMjIuMDcxIDEwLjYyNXYtLjAyM2EzNS4wOTggMzUuMDk4IDAgMDExMS4wMzYtMTIuODk0IDMzLjIxNiAzMy4yMTYgMCAwMTIuODg3LTEuODY0YzIuMTA1LTEuMjEzIDQuMjUzLTEuMjggNC45Ny0xLjMwMyA2LjcxNS4xMTIgMy4yMjMgNS4zOTEgMy4xNzggNS40NTl6bS0zLjgwNSA0OS45NTljLjMzNiAyLjE3OSAwIDEwLjg1LS40NDggMTEuNTY5LS40MDMuMDIyLTEuMjA4LjA2Ny0zLjU1OS0xLjIzNkEzNy41OTUgMzcuNTk1IDAgMDE4LjkyOCA1NS4zMDlhMzYuNDY2IDM2LjQ2NiAwIDAxLjQwMy0yNC41M2MyLjY4NiAzLjU1IDUuODIgNi43NjEgOC40NjIgMTAuMzMzIDIuNTMgMy40MzcgNS45OTkgOC45ODUgNi43MTUgMTAuMTc2IDQuMzY1IDcuMzkgNS4wNiAxMS45MjggNS4zOTUgMTQuMTN6TTgzIDQzLjk4OGMwIDQuNzQtLjk0IDkuMjc3LTIuNjE5IDEzLjQzMy00LjQ3NyA0LjYwNS0zNC41MTgtNi43NjItMzQuODA5LTYuODk3LTQuMTE4LTEuNzMtMTYuNjMyLTcuMDMtMTcuNzUtMTUuMzItMS42MzUtMTEuOTUgMjMuNTAzLTIwLjI4NSAzNC41NC0yMC41OTkgMS4zNDIuMDIyIDUuMzcyLjA2NyA3LjcgMS45MWEzNS44MTIgMzUuODEyIDAgMDE5LjUxNSAxMi4yOTFBMzUuOTM0IDM1LjkzNCAwIDAxODMgNDMuOTg3ek02My41MjUgNzYuMzM0Yy0zLjEzNCAxLjUwNS02LjYwMy40MDQtNS43MDgtMi43ODUgMS43MjQtNi4xMSAxNi43ODktMTIuMzc4IDIwLjEwMi0xMi43MTUuNDI1LS4wNDUuNTgyLjIyNS40MDMuNTg0YTM3LjM2IDM3LjM2IDAgMDEtMTQuNzk3IDE0Ljg5NCIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg=="); }
+  .btn-pay-with-terra.pwt-system-font {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+    .btn-pay-with-terra.pwt-system-font > span:not(.pwt-logo) {
+      padding-top: 0;
+      padding-bottom: 0.1em; }
+  .btn-pay-with-terra.pwt-short-spaces > span:not(.pwt-label-terra) {
+    margin-left: 0.05em; }
+  .btn-pay-with-terra.pwt-short-spaces > span.pwt-label-terra {
+    margin-left: 0; }
+  .btn-pay-with-terra.pwt-short-spaces > span.pwt-logo {
+    margin-right: 0.3em; }
+  .btn-pay-with-terra.pwt-short-spaces > span:not(.pwt-label-terra):last-child {
+    margin-left: 0.3em; }
+  .btn-pay-with-terra:focus:not(:focus-visible) {
+    outline: 0; }
+  .btn-pay-with-terra:hover {
+    background: #f2f2f2; }
+  .btn-pay-with-terra:active {
+    background: #e6e6e6; }
+  .btn-pay-with-terra:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.25); }
+  .btn-pay-with-terra:disabled, .btn-pay-with-terra.disabled,
+  fieldset:disabled .btn-pay-with-terra {
+    pointer-events: none;
+    opacity: 0.65; }
+  .btn-pay-with-terra.pwt-dark {
+    background-color: #2d2d2d; }
+    .btn-pay-with-terra.pwt-dark:hover {
+      background: #3a3a3a; }
+    .btn-pay-with-terra.pwt-dark:active {
+      background: #474747; }
+    .btn-pay-with-terra.pwt-dark:focus {
+      box-shadow: 0 0 0 0.15rem rgba(45, 45, 45, 0.25); }
+    .btn-pay-with-terra.pwt-dark > span:first-child {
+      color: #ffffff; }
+    .btn-pay-with-terra.pwt-dark > span.pwt-label-terra {
+      color: #3b89ff; }
+    .btn-pay-with-terra.pwt-dark > span.pwt-label-denom {
+      color: #ffffff;
+      background-color: #ffffff;
+      background-image: linear-gradient(to right, #ffffff, #3b89ff); }
