@@ -32,10 +32,14 @@
       color: $pwt-btn-label-terra;
     }
 
+    &.pwt-label-pay {
+      color: $pwt-btn-label-pay;
+    }
+
     &.pwt-label-denom {
       color: #0d6efd;
       background-color: #0d6efd;
-      background-image: linear-gradient(to right, #0d6efd, #2043b5);
+      background-image: linear-gradient(to right, #2043b5, #0d6efd);
       background-size: 100%;
       background-clip: text;
       -webkit-background-clip: text;
@@ -144,8 +148,12 @@
     }
 
     &>span {
-      &:first-child {
+      &.pwt-label-text {
         color: $pwt-btn-label-addon-color-dark;
+      }
+      
+      &.pwt-label-pay {
+        color: $pwt-btn-label-pay-dark;
       }
 
       &.pwt-label-terra {
