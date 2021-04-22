@@ -1,6 +1,6 @@
 {
   "name": "paywithterra-buttons",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,11 +9,8 @@
   "author": "Arty <arty@paywithterra.com> (https://paywithterra.com)",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
-    "gulp-connect": "^5.7.0",
     "gulp-sass": "^4.1.0",
-    "highlight.js": "^10.7.2",
     "node-sass": "^5.0.0"
   }
 }

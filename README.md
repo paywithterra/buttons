@@ -1,4 +1,4 @@
-# PayWithTerra buttons
+# PaywithTerra buttons
 
 ## Usage
 See the [demo page](https://paywithterra.com/docs/buttons)
