@@ -19,12 +19,16 @@
   &>span {
     font-size: 1em;
     line-height: 1;
-    margin-left: 0.3em;
+    
     padding-top: 0.1em;
     color: $pwt-btn-label-fg;
     white-space: nowrap;
 
-    &:first-child {
+    &:not(:first-child){
+      margin-left: 0.3em;
+    }
+
+    &.pwt-label-text {
       margin-right: 0.3em;
     }
 

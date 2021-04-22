@@ -15,11 +15,12 @@
   .btn-pay-with-terra > span {
     font-size: 1em;
     line-height: 1;
-    margin-left: 0.3em;
     padding-top: 0.1em;
     color: #2d2d2d;
     white-space: nowrap; }
-    .btn-pay-with-terra > span:first-child {
+    .btn-pay-with-terra > span:not(:first-child) {
+      margin-left: 0.3em; }
+    .btn-pay-with-terra > span.pwt-label-text {
       margin-right: 0.3em; }
     .btn-pay-with-terra > span.pwt-label-terra {
       color: #2043b5; }
